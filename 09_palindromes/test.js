@@ -1,5 +1,6 @@
 const palindromes = function (string) {
   word = string.toLowerCase().replace(/[' '.,\/#!$%\^&\*;:{}=\-_~()]/g, '');
+  console.log(word);
   reversedWord = "";
   for(let i = word.length - 1; i >= 0; i--){
     reversedWord += word[i];
@@ -12,5 +13,6 @@ const palindromes = function (string) {
   }
 };
 
-// Do not edit below this line
-module.exports = palindromes;
+
+
+console.log(palindromes("racecar!"));
